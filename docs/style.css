@@ -1,0 +1,25 @@
+:root {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Courier New", Sans-serif;
+  background: #e6e6d8 
+}
+
+.navbar-item {
+  padding: 5px;
+}
+
+.navbar-item.navhead {
+  font-size: 18px;
+}
+
+.image-container {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
