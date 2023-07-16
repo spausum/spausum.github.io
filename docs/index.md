@@ -1,3 +1,0 @@
-# Home Page
-
-### Pau Sum
