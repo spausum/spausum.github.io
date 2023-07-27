@@ -1,0 +1,28 @@
+.grid-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding-top: 40px; /* Adjust this value as per your preference */
+}
+
+.grid-item {
+  border: 1px solid #ccc; /* Optional: Add borders to the grid items */
+  padding: 10px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  display: block; /* Remove default inline spacing */
+  object-fit: cover; /* Make the images fill the grid item */
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}

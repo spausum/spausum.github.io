@@ -36,7 +36,7 @@ body{
     height: 2px;
     width: 50px;
     background: linear-gradient(90deg , transparent , #fff);
-    animation: animate 5s infinite linear;
+    /* animation: animate 5s infinite linear; */
 }
 
 
@@ -197,7 +197,7 @@ section{
 
 
 .col-2 span{
-    font-size: 8px;
+    font-size: 10px;
     text-transform: uppercase;
     letter-spacing:3px;
     opacity: .7;
@@ -325,8 +325,8 @@ footer{
 }
 
 .right{
-    top: 50px;
-    left: 75%;
+    top: 10px;
+    left: 70%;
 }
 
 .title span{
@@ -403,7 +403,7 @@ footer{
 .right-side p{
     position: absolute;
     top: 45%;
-    left: -15%;
+    /* left: -15%; */
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -411,3 +411,4 @@ footer{
 .fa-arrow-right-long{
     transform: translateX(20px);
 }
+
