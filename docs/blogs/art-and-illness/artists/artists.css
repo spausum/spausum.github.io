@@ -1,0 +1,145 @@
+/* /* Add the following CSS to your artists.css file or in the <head> section of your HTML file */ */
+/* .header-title { */
+/*     padding: 20px; */
+/*     text-align: center; */
+/*     position: relative; /* Ensure the header is positioned relative to its normal position */ */
+/*     z-index: 1; /* Set a higher z-index to make sure it appears above the navbar */ */
+/*   } */
+/*    */
+/*   .header-title h1 { */
+/*     margin: 0; */
+/*     font-size: 24px; */
+/*     color: #333; */
+/*   } */
+/*    */
+/*   /* Adjust the navbar's position to allow space for the header */ */
+/*   .navbar { */
+/*     position: relative; /* Ensure the navbar is positioned relative to its normal position */ */
+/*     z-index: 0; /* Set a lower z-index to ensure it stays below the header */ */
+/*   } */
+* {
+  box-sizing: content-box; /* or any other value you want */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: w;
+    src: url(../fonts/WanoQuin-ExtraBold.otf);
+}
+
+
+body{
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    background-color: #141414;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    z-index: 1000;
+}
+
+.navbar span{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 50px;
+    background: linear-gradient(90deg , transparent , #fff);
+    /* animation: animate 5s infinite linear; */
+}
+
+.head-box {
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.head-box h1 {
+  text-align: center;
+}
+
+
+@keyframes animate {
+    0%{
+        left: 0;
+        transform: translate(-100%);
+    }
+    100%{
+        left: 100%;
+        transform: translate(0%);
+    }
+}
+
+.logo{
+    text-transform: capitalize;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: w;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu{
+    display: flex;
+    gap: 5rem;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+
+.btn{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+
+.wrapper{
+    display: flex;
+}
+
+h1{
+    font-family: w;
+    font-size: 100px;
+    text-transform: capitalize;
+    top: 50px;
+    left: 47%;
+    z-index: 100;
+}
+
+.flex-container {
+  display:flex;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.img-box {
+  margin: 20px;
+}
+
+.text-cont {
+  margin: 20px;
+}
