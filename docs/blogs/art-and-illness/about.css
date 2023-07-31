@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+@font-face {
+    font-family: w;
+    src: url(fonts/WanoQuin-ExtraBold.otf);
+}
+.navbar {
+  background-color: black;
+  opacity: .9;
+}
+
 .video-background {
   position: relative;
   overflow: hidden;
@@ -10,6 +21,12 @@ video {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+body{
+    color: #fff;
+    overflow-x: hidden;
+    background-color: #141414;
 }
 
 .centered-text-box {
@@ -25,7 +42,11 @@ video {
   border-radius: 5px;
 }
 
-.navbar {
-  background-color: black;
-  opacity: .9;
+.centered-text-box p {
+  font-size: 22px;
 }
+
+
+
+
+
