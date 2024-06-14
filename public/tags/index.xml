@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Whiteplain</title>
+    <title>Tags on ML Project</title>
     <link>http://localhost:1313/tags/</link>
-    <description>Recent content in Tags on Whiteplain</description>
+    <description>Recent content in Tags on ML Project</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>Your email (Your name)</managingEditor>
-    <webMaster>Your email (Your name)</webMaster>
     <copyright>&amp;copy; Copyright 2017 Your name</copyright>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
