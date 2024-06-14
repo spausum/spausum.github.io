@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Whiteplain</title>
+  <meta property="og:title" content="Whiteplain" />
+  <meta name="twitter:title" content="Whiteplain" />
+  <meta name="description" content="Whisper is a documentation theme built with Hugo. The design and functionality is intentionally minimal.">
+  <meta property="og:description" content="Whisper is a documentation theme built with Hugo. The design and functionality is intentionally minimal.">
+  <meta name="twitter:description" content="Whisper is a documentation theme built with Hugo. The design and functionality is intentionally minimal.">
+  <meta name="author" content="Your name"/>
+  <meta property="og:site_name" content="Whiteplain" />
+  <meta property="og:url" content="http://localhost:1313/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="generator" content="Hugo 0.124.0">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Whiteplain" />
+  <link href="/index.xml" rel="feed" type="application/rss+xml" title="Whiteplain" />
+  <link rel="stylesheet" href="/css/style.css" media="all" />
+  <link rel="stylesheet" href="/css/style-dark.css" media="all and (prefers-color-scheme: dark)" />
+
+  <link rel="stylesheet" href="/css/syntax.css" media="all" />
+  <link rel="stylesheet" href="/css/custom.css" media="all" />
+
+  <script src="/js/script.js"></script>
+  <script src="/js/custom.js"></script>
+  <script defer src="/fontawesome/all.min.js"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="site-navi">
+    <h1 class="site-title"><a href="/">Whiteplain</a></h1>
+    <ul class="site-navi-items">
+      <li class="site-navi-item-categories"><a href="/categories/" title="Categories">Categories</a></li>
+      <li class="site-navi-item-tags"><a href="/tags/" title="Tags">Tags</a></li>
+      <li class="site-navi-item-archives"><a href="/archives/" title="Archives">Archives</a></li>
+      <li class="site-navi-item-about"><a href="/about/" title="About">About</a></li>
+    </ul>
+  </nav>
+</header>
+<hr class="site-header-bottom">
+
+  <div class="main" role="main">
+    <section class="list home-list">
+      <article class="article">
+        <a href="/docs/install-hugo/" class="article-titles">
+          <h2 class="article-title">Install Hugo</h2>
+          
+        </a>
+        <ul class="article-meta">
+          <li class="article-meta-date"><time>February 11, 2019</time></li>
+        </ul>
+        <div class="article-content">
+          <p>To use this theme you will need to have Hugo installed. If you don&rsquo;t already have Hugo installed please follow the official <a href="https://gohugo.io/getting-started/installing/">installation guide</a></p>
+<h3 id="check-hugo-version">Check Hugo Version</h3>
+<p>This theme uses <a href="https://gohugo.io/hugo-pipes/scss-sass/">Hugo Pipes</a> to compile SCSS and minify assets. Please make sure you have the <code>Hugo Extended</code> version installed. If you are not using the extended version this theme will not not compile.</p>
+<pre tabindex="0"><code>hugo version
+</code></pre>
+        </div>
+        <div class="article-readmore"><a href="/docs/install-hugo/">Read more...</a></div>
+        <div class="article-floatclear"></div>
+      </article>
+      <article class="article">
+        <a href="/docs/install-theme/" class="article-titles">
+          <h2 class="article-title">Install Theme</h2>
+          
+        </a>
+        <ul class="article-meta">
+          <li class="article-meta-date"><time>February 11, 2019</time></li>
+        </ul>
+        <div class="article-content">
+          Create a new Hugo site hugo new site mynewsite This will create a fresh Hugo site in the folder mynewsite.
+Install theme Copy or git clone this theme into the sites themes folder mynewsite/themes
+Install with Git cd mynewsite cd themes git clone https://github.com/jugglerx/hugo-whisper-theme.git Install from .zip file You can download the .zip file located here https://github.com/JugglerX/hugo-whisper-theme/archive/master.zip.
+Extract the downloaded .zip inside the themes folder. Rename the extracted folder from hugo-whisper-theme-master -&gt; hugo-whisper-theme.
+        </div>
+        <div class="article-readmore"><a href="/docs/install-theme/">Read more...</a></div>
+        <div class="article-floatclear"></div>
+      </article>
+      <article class="article">
+        <a href="/docs/configure/" class="article-titles">
+          <h2 class="article-title">Configuration</h2>
+          
+        </a>
+        <ul class="article-meta">
+          <li class="article-meta-date"><time>February 11, 2019</time></li>
+        </ul>
+        <div class="article-content">
+          <h2 id="syntax-highlighting">Syntax Highlighting</h2>
+<p>Whisper uses the in-built code highlighting that ships with hugo. <a href="https://gohugo.io/content-management/syntax-highlighting/">https://gohugo.io/content-management/syntax-highlighting/</a></p>
+<p>You can insert code snippets in any markdown file by using standard code fences syntax ie:</p>
+<pre tabindex="0"><code>```
+insert code here
+```
+</code></pre><p>You can specify the langauge by adding a declaration after the backticks</p>
+<pre tabindex="0"><code>```javascript
+insert code here
+```
+</code></pre><h3 id="pygments-options">Pygments Options</h3>
+<p>The following code highlighting options are configured in the <code>config.toml</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">pygmentsCodeFences</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pygmentsCodefencesGuessSyntax</span> = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">pygmentsUseClasses</span> = <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><h2 id="main-menu">Main menu</h2>
+<p>Configure the main menu by editing the <code>config.toml</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Home&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;Docs&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/docs/&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">2</span>
+</span></span></code></pre></div>
+        </div>
+        <div class="article-readmore"><a href="/docs/configure/">Read more...</a></div>
+        <div class="article-floatclear"></div>
+      </article>
+      <article class="article">
+        <a href="/docs/specimen/" class="article-titles">
+          <h2 class="article-title">Specimen</h2>
+          
+        </a>
+        <ul class="article-meta">
+          <li class="article-meta-date"><time>February 11, 2019</time></li>
+        </ul>
+        <div class="article-content">
+          Markdown Test Page Headings Paragraphs Blockquotes Lists Horizontal rule Table Code Inline elements Headings Heading one Sint sit cillum pariatur eiusmod nulla pariatur ipsum. Sit laborum anim qui mollit tempor pariatur nisi minim dolor. Aliquip et adipisicing sit sit fugiat commodo id sunt. Nostrud enim ad commodo incididunt cupidatat in ullamco ullamco Lorem cupidatat velit enim et Lorem.
+Heading two Aute officia nulla deserunt do deserunt cillum velit magna. Officia veniam culpa anim minim dolore labore pariatur voluptate id ad est duis quis velit dolor pariatur enim.
+        </div>
+        <div class="article-readmore"><a href="/docs/specimen/">Read more...</a></div>
+        <div class="article-floatclear"></div>
+      </article>
+      <article class="article">
+        <a href="/docs/example/" class="article-titles">
+          <h2 class="article-title">Hugo Whisper</h2>
+          
+        </a>
+        <ul class="article-meta">
+          <li class="article-meta-date"><time>February 11, 2019</time></li>
+        </ul>
+        <div class="article-content">
+          <p>Whisper is a minimal documentation theme built for Hugo. The design &amp; functionality is intentionally minimal.</p>
+        </div>
+        <div class="article-readmore"><a href="/docs/example/">Read more...</a></div>
+        <div class="article-floatclear"></div>
+      </article>
+    </section>
+    
+  </div>
+
+
+
+<div class="site-footer">
+  <div class="copyright">&copy; Copyright 2017 Your name</div>
+  <ul class="site-footer-items">
+    <li class="site-footer-item-rsslink">
+      <a href="/index.xml" type="application/rss+xml" target="_blank" title="RSS">
+        <i class="fa-solid fa-rss"></i>
+      </a>
+    </li>
+    <li class="site-footer-item-about"><a href="/about/" title="About">About</a></li>
+  </ul>
+  <div class="powerdby">
+    Powered by <a href="https://gohugo.io/">Hugo</a> and <a href="https://github.com/taikii/whiteplain">Whiteplain</a>
+  </div>
+</div>
+
+
+</body>
+</html>
