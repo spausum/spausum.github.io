@@ -57,10 +57,10 @@ To predict the likelihood of a strike using pitch data from MLB’s Statcast Sea
 Our goal is to use these metrics to validate our model’s predictions on pitch outcomes in baseball games. We expect the results to accurately predict the likelihood of a strike, enhancing the training and strategic decisions for teams and players.
 
 ## Gantt Chart
-![](/img/ganttchart.png)
+![](/images/ganttchart.png)
 
 ## Contributions
-![](img/contri.png)
+![](/images/contribute.png)
 
 
 ## References
