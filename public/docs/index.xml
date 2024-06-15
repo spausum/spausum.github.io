@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Overview on ML Project</title>
-    <link>http://localhost:1313/docs/</link>
+    <link>http://localhost:58620/docs/</link>
     <description>Recent content in Overview on ML Project</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; Copyright 2017 Your name</copyright>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:58620/docs/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
