@@ -45,7 +45,7 @@ On top of these methods, we did some initial analysis to remove certain features
 
 The diagonal elements represent the number of correct predictions for each pitch type, while the off-diagonal elements indicate the misclassifications. The confusion matrix indicates that the model performs well in predicting certain pitch types but may have difficulties with others. For example, while the other pitch types have a predicted and actual accuracy of roughly 80%, the cutter pitch type performs worse. With 228 predicted actual matching out of 439 pitches, its accuracy is roughly 52%.
 
-The cutter pitches might have performed worse due to their similarity to Fastballs and imbalanced data representation compared to the other pitch types, especially Fastballs. A cutter ball is thrown like a Fastball but with both fingers placed together towards one side of the baseball to produce a cutting movement when thrown. Because there are more Fastball data and due to its similarity to Fastballs, the model might have a harder time distinguishing the two.
+The cutter pitches might have performed worse due to their similarity to fastballs and imbalanced data representation (fastballs represent about 13,000 out of our 24,000 datapoints). A cutter ball is thrown like a fastball but with both fingers placed together towards one side of the baseball to produce a cutting movement when thrown. Because there are more fastball data and due to its similarity to fastballs, the model might have a harder time distinguishing the two.
 
 #### ROC curve
 ![](/images/multi_roc.png)
@@ -62,9 +62,9 @@ The logistic regression model achieved an accuracy of approximately 88.52% on th
 Release speed having a high negative coefficient indicates that as the release speed increases, the likelihood of a pitch being classified into certain types decreases. This suggests that faster pitches are less likely to be classified into other types and more likely to be classified as fastballs.
 
 Z Movement having a high positive coefficient indicates that as vertical movement increases, the likelihood of a pitch being classified into certain types increase.
-For each increase in 'z_movement', the odd of the pitch being classfied as a curveball or another pitch with more vertical movement increases by 1.309
+For each increase in `z_movement`, the odd of the pitch being classfied as a curveball or another pitch with more vertical movement increases by 1.309
 
-An increase in 'release_pos_x' would increasese the odd of the pitch being classified as a pitch with more horizontal releaes position like sliders.
+An increase in `release_pos_x` would increasese the odd of the pitch being classified as a pitch with more horizontal releaes position like sliders.
 
 
 **Strengths:**
@@ -88,11 +88,11 @@ We can also implement additional models such as Random Forest Classifier and Sup
 ![](/images/midterm_contri.png)
 
 
-## References: 
-[1] C. Gough, “MLB league revenue 2024,” Statista, https://www.statista.com/statistics/193466/total-league-revenue-of-the-mlb-since-2005/   
-[2] “US Sports Betting Revenue Tracker - how much revenue is each state generating in 2023?,” Oddspedia, https://oddspedia.com/us/betting/sports-betting-revenue 
-[3] H. Lee, J. Kim, J. Kim, J. Yu and W. -Y. Kim, "Start-End Time Detection in Baseball Videos for Automatic Pitching Trajectory Analysis," 2019 International Conference on Electronics, Information, and Communication (ICEIC), Auckland, New Zealand, 2019, pp. 1-4, doi: 10.23919/ELINFOCOM.2019.8706498.  
-[4] “Statcast Search,” baseballsavant.mlb.com, https://baseballsavant.mlb.com/statcast_search 
-[5] H. Lee, J. Kim, J. Kim and W. -Y. Kim, "A Method of Measuring Baseball Position at the Strike Zone," 2020 International Conference on Electronics, Information, and Communication (ICEIC), Barcelona, Spain, 2020, pp. 1-3, doi: 10.1109/ICEIC49074.2020.9051039.
-[6] J. Schuh and L. Kong, "Classifying Pitch Types in Baseball Using Machine Learning Algorithms," 2023 IEEE Asia-Pacific Conference on Computer Science and Data Engineering (CSDE), Nadi, Fiji, 2023, pp. 1-6, doi: 10.1109/CSDE59766.2023.10487702.
+## References
 
+1. C. Gough, “MLB league revenue 2024,” Statista. [Online]. Available: [https://www.statista.com/statistics/193466/total-league-revenue-of-the-mlb-since-2005/](https://www.statista.com/statistics/193466/total-league-revenue-of-the-mlb-since-2005/)
+2. “US Sports Betting Revenue Tracker - how much revenue is each state generating in 2023?,” Oddspedia. [Online]. Available: [https://oddspedia.com/us/betting/sports-betting-revenue](https://oddspedia.com/us/betting/sports-betting-revenue)
+3. H. Lee, J. Kim, J. Kim, J. Yu, and W. -Y. Kim, "Start-End Time Detection in Baseball Videos for Automatic Pitching Trajectory Analysis," 2019 International Conference on Electronics, Information, and Communication (ICEIC), Auckland, New Zealand, 2019, pp. 1-4, doi: 10.23919/ELINFOCOM.2019.8706498.
+4. “Statcast Search,” baseballsavant.mlb.com. [Online]. Available: [https://baseballsavant.mlb.com/statcast_search](https://baseballsavant.mlb.com/statcast_search)
+5. H. Lee, J. Kim, J. Kim and W. -Y. Kim, "A Method of Measuring Baseball Position at the Strike Zone," 2020 International Conference on Electronics, Information, and Communication (ICEIC), Barcelona, Spain, 2020, pp. 1-3, doi: 10.1109/ICEIC49074.2020.9051039.
+6. J. Schuh and L. Kong, "Classifying Pitch Types in Baseball Using Machine Learning Algorithms," 2023 IEEE Asia-Pacific Conference on Computer Science and Data Engineering (CSDE), Nadi, Fiji, 2023, pp. 1-6, doi: 10.1109/CSDE59766.2023.10487702.

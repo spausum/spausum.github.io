@@ -2,17 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on ML Project</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:60485/posts/</link>
     <description>Recent content in Posts on ML Project</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Jun 2024 19:04:15 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Jul 2024 03:01:50 -0400</lastBuildDate>
+    <atom:link href="http://localhost:60485/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Midterm Report</title>
+      <link>http://localhost:60485/posts/midterm/</link>
+      <pubDate>Wed, 03 Jul 2024 03:01:50 -0400</pubDate>
+      <guid>http://localhost:60485/posts/midterm/</guid>
+      <description>Introduction/Background Baseball is one of the most popular sports in the United States, often referred to as “America’s pastime.” With Major League Baseball’s total revenue consistently increasing [1] and the betting industry reaching a revenue of $7 billion in 2023 [2], data analytics has become increasingly important. The MLB collects extensive statistics on baseball performance metrics for teams and players. In particular, the analysis of pitch trajectories is crucial for training pitchers and batters alike.</description>
+    </item>
     <item>
       <title>Machine Learning Project Proposal</title>
-      <link>http://localhost:1313/posts/proposal/</link>
+      <link>http://localhost:60485/posts/proposal/</link>
       <pubDate>Fri, 14 Jun 2024 19:04:15 -0400</pubDate>
-      <guid>http://localhost:1313/posts/proposal/</guid>
+      <guid>http://localhost:60485/posts/proposal/</guid>
       <description>Introduction/Background Baseball is one of the most popular sports in the United States, often referred to as “America’s pastime.” With Major League Baseball’s total revenue consistently increasing [1] and the betting industry reaching a revenue of $7 billion in 2023 [2], data analytics has become increasingly important. The MLB collects extensive statistics on baseball performance metrics for teams and players. In particular, the analysis of pitch trajectories is crucial for training pitchers and providing additional content for viewers [3].</description>
     </item>
   </channel>

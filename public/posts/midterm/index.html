@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=60485&amp;path=livereload" data-no-instant defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Midterm Report - ML Project</title>
@@ -11,7 +11,7 @@
   <meta name="twitter:description" content="Introduction/Background Baseball is one of the most popular sports in the United States, often referred to as “America’s pastime.” With Major League Baseball’s total revenue consistently increasing …">
   <meta name="author" content=""/>
   <meta property="og:site_name" content="ML Project" />
-  <meta property="og:url" content="http://localhost:1313/posts/midterm/" />
+  <meta property="og:url" content="http://localhost:60485/posts/midterm/" />
   <meta property="og:type" content="article" />
   <meta name="twitter:card" content="summary" />
   <meta name="generator" content="Hugo 0.124.0">
@@ -72,7 +72,7 @@
     </li>
     <li><a href="#gantt-chart">Gantt Chart</a></li>
     <li><a href="#contributions">Contributions</a></li>
-    <li><a href="#references">References:</a></li>
+    <li><a href="#references">References</a></li>
   </ul>
 </nav>
 </aside>
@@ -98,7 +98,7 @@ On top of these methods, we did some initial analysis to remove certain features
 <h4 id="confusion-matrix">Confusion Matrix</h4>
 <p><img src="/images/confusion_mtx.png" alt=""></p>
 <p>The diagonal elements represent the number of correct predictions for each pitch type, while the off-diagonal elements indicate the misclassifications. The confusion matrix indicates that the model performs well in predicting certain pitch types but may have difficulties with others. For example, while the other pitch types have a predicted and actual accuracy of roughly 80%, the cutter pitch type performs worse. With 228 predicted actual matching out of 439 pitches, its accuracy is roughly 52%.</p>
-<p>The cutter pitches might have performed worse due to their similarity to Fastballs and imbalanced data representation compared to the other pitch types, especially Fastballs. A cutter ball is thrown like a Fastball but with both fingers placed together towards one side of the baseball to produce a cutting movement when thrown. Because there are more Fastball data and due to its similarity to Fastballs, the model might have a harder time distinguishing the two.</p>
+<p>The cutter pitches might have performed worse due to their similarity to fastballs and imbalanced data representation (fastballs represent about 13,000 out of our 24,000 datapoints). A cutter ball is thrown like a fastball but with both fingers placed together towards one side of the baseball to produce a cutting movement when thrown. Because there are more fastball data and due to its similarity to fastballs, the model might have a harder time distinguishing the two.</p>
 <h4 id="roc-curve">ROC curve</h4>
 <p><img src="/images/multi_roc.png" alt=""></p>
 <p>The ROC curve and AUC scores for each pitch type provide a measure of the model&rsquo;s ability to distinguish between different classes. The ROC curve plots the true positive rate against the false positive rate for each pitch type. As the curve moves towards the top left, it indicates that the model is correctly identifying a higher proportion of true positives. This means the model is effectively recognizing positive instances. The curves for the five classes are far to the top left and thus more accurate. More quantitatively, we can see that their area under the curve (AUC) is close to one. The AUC represents the probability that the classifier will rank a randomly chosen positive instance higher than a randomly chosen negative instance.</p>
@@ -108,8 +108,8 @@ On top of these methods, we did some initial analysis to remove certain features
 <p>The logistic regression model achieved an accuracy of approximately 88.52% on the test set. This indicates that the model performs relatively well in classifying pitch types based on the given features. The feature importance analysis reveals that <code>release_speed</code>, <code>z_movement</code>, and <code>release_pos_x</code> are among the most significant predictors.</p>
 <p>Release speed having a high negative coefficient indicates that as the release speed increases, the likelihood of a pitch being classified into certain types decreases. This suggests that faster pitches are less likely to be classified into other types and more likely to be classified as fastballs.</p>
 <p>Z Movement having a high positive coefficient indicates that as vertical movement increases, the likelihood of a pitch being classified into certain types increase.
-For each increase in &lsquo;z_movement&rsquo;, the odd of the pitch being classfied as a curveball or another pitch with more vertical movement increases by 1.309</p>
-<p>An increase in &lsquo;release_pos_x&rsquo; would increasese the odd of the pitch being classified as a pitch with more horizontal releaes position like sliders.</p>
+For each increase in <code>z_movement</code>, the odd of the pitch being classfied as a curveball or another pitch with more vertical movement increases by 1.309</p>
+<p>An increase in <code>release_pos_x</code> would increasese the odd of the pitch being classified as a pitch with more horizontal releaes position like sliders.</p>
 <p><strong>Strengths:</strong>
 The model provides clear interpretability through feature coefficients, allowing us to understand the importance of each feature. The high accuracy and AUC scores indicate that the model can effectively classify pitch types.</p>
 <p><strong>Weaknesses:</strong>
@@ -122,13 +122,15 @@ Certain pitch types may still be misclassified, as indicated by the off-diagonal
 <p><img src="/images/midterm_gantt.png" alt=""></p>
 <h2 id="contributions">Contributions</h2>
 <p><img src="/images/midterm_contri.png" alt=""></p>
-<h2 id="references">References:</h2>
-<p>[1] C. Gough, “MLB league revenue 2024,” Statista, <a href="https://www.statista.com/statistics/193466/total-league-revenue-of-the-mlb-since-2005/">https://www.statista.com/statistics/193466/total-league-revenue-of-the-mlb-since-2005/</a><br>
-[2] “US Sports Betting Revenue Tracker - how much revenue is each state generating in 2023?,” Oddspedia, <a href="https://oddspedia.com/us/betting/sports-betting-revenue">https://oddspedia.com/us/betting/sports-betting-revenue</a>
-[3] H. Lee, J. Kim, J. Kim, J. Yu and W. -Y. Kim, &ldquo;Start-End Time Detection in Baseball Videos for Automatic Pitching Trajectory Analysis,&rdquo; 2019 International Conference on Electronics, Information, and Communication (ICEIC), Auckland, New Zealand, 2019, pp. 1-4, doi: 10.23919/ELINFOCOM.2019.8706498.<br>
-[4] “Statcast Search,” baseballsavant.mlb.com, <a href="https://baseballsavant.mlb.com/statcast_search">https://baseballsavant.mlb.com/statcast_search</a>
-[5] H. Lee, J. Kim, J. Kim and W. -Y. Kim, &ldquo;A Method of Measuring Baseball Position at the Strike Zone,&rdquo; 2020 International Conference on Electronics, Information, and Communication (ICEIC), Barcelona, Spain, 2020, pp. 1-3, doi: 10.1109/ICEIC49074.2020.9051039.
-[6] J. Schuh and L. Kong, &ldquo;Classifying Pitch Types in Baseball Using Machine Learning Algorithms,&rdquo; 2023 IEEE Asia-Pacific Conference on Computer Science and Data Engineering (CSDE), Nadi, Fiji, 2023, pp. 1-6, doi: 10.1109/CSDE59766.2023.10487702.</p>
+<h2 id="references">References</h2>
+<ol>
+<li>C. Gough, “MLB league revenue 2024,” Statista. [Online]. Available: <a href="https://www.statista.com/statistics/193466/total-league-revenue-of-the-mlb-since-2005/">https://www.statista.com/statistics/193466/total-league-revenue-of-the-mlb-since-2005/</a></li>
+<li>“US Sports Betting Revenue Tracker - how much revenue is each state generating in 2023?,” Oddspedia. [Online]. Available: <a href="https://oddspedia.com/us/betting/sports-betting-revenue">https://oddspedia.com/us/betting/sports-betting-revenue</a></li>
+<li>H. Lee, J. Kim, J. Kim, J. Yu, and W. -Y. Kim, &ldquo;Start-End Time Detection in Baseball Videos for Automatic Pitching Trajectory Analysis,&rdquo; 2019 International Conference on Electronics, Information, and Communication (ICEIC), Auckland, New Zealand, 2019, pp. 1-4, doi: 10.23919/ELINFOCOM.2019.8706498.</li>
+<li>“Statcast Search,” baseballsavant.mlb.com. [Online]. Available: <a href="https://baseballsavant.mlb.com/statcast_search">https://baseballsavant.mlb.com/statcast_search</a></li>
+<li>H. Lee, J. Kim, J. Kim and W. -Y. Kim, &ldquo;A Method of Measuring Baseball Position at the Strike Zone,&rdquo; 2020 International Conference on Electronics, Information, and Communication (ICEIC), Barcelona, Spain, 2020, pp. 1-3, doi: 10.1109/ICEIC49074.2020.9051039.</li>
+<li>J. Schuh and L. Kong, &ldquo;Classifying Pitch Types in Baseball Using Machine Learning Algorithms,&rdquo; 2023 IEEE Asia-Pacific Conference on Computer Science and Data Engineering (CSDE), Nadi, Fiji, 2023, pp. 1-6, doi: 10.1109/CSDE59766.2023.10487702.</li>
+</ol>
 
     </article>
 
