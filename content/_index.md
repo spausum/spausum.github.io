@@ -4,11 +4,20 @@ display_section = "posts"
 draft = false
 +++
 
-Hello, and welcome to my site! It's currently a work in progress but eventually
-you'll find:
+## Welcome
+Hello, and welcome to my site! While it's a work in progress, here's what you can look forward to:
 
-- My latest blog posts on technology, design, and coding.
-- Personal projects I've been working on.
-- Insights into topics that interest me.
+---
 
-Feel free to explore and [get in touch](mailto:blog.sumpau.com).
+### Navigation
+- [**Blog Posts**](/posts): Stay updated with my latest thoughts on technology, design, and coding.
+- [**Projects**](/projects): Explore the personal projects I've been working on.
+- [**About Me**](/about): Learn more about who I am and what I do.
+### Explore
+- [**Categories**](/categories)
+- [**Tags**](/tags)
+
+---
+
+### Get in Touch
+If you'd like to connect or share ideas, feel free to [reach out via email](mailto:blog.sumpau.com)!
