@@ -1,0 +1,24 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Pau Sum'
+theme = "paperesque"
+
+[[params.topmenu]]
+  name = "about"
+  url = "about/"
+
+[[params.topmenu]]
+  name = "tags"
+  url = "tags/"
+
+# [[params.topmenu]]
+#   name = "posts"
+#   url = "posts/"
+
+# [[params.topmenu]]
+#   name = "contact"
+#   url = "contact/"
+
+[[params.topmenu]]
+  name = "rss"
+  url = "posts/index.xml"

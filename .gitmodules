@@ -1,0 +1,4 @@
+[submodule "themes/paperesque"]
+	path = themes/paperesque
+	url = https://github.com/spausum/paperesque
+	branch = mainline
